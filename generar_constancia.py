@@ -197,7 +197,6 @@ def generar_constancia(datos: dict, ruta_salida: str):
     bloque_qr = [
         qr_img,
         Paragraph("Escanea para validar esta constancia", hoja["FirmaCargo"]),
-        Paragraph("QR DE EJEMPLO — pendiente desarrollar el propio", hoja["QrEtiqueta"]),
     ]
 
     tabla_firma_qr = Table(
