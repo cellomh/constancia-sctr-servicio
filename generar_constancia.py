@@ -129,7 +129,7 @@ def generar_constancia(datos: dict, ruta_salida: str):
 
     # --- Empresa / RUC / vigencia / actividad, centrado (como el ejemplo) ---
     elementos.append(Paragraph(datos["empresa"], hoja["NombreEmpresa"]))
-    elementos.append(Paragraph(f"RUC: {datos['ruc']}", hoja["DatoCentrado"]))
+    elementos.append(Paragraph(f"{datos.get('etiqueta_documento', 'RUC')}: {datos['ruc']}", hoja["DatoCentrado"]))
     elementos.append(Paragraph(
         f"VIGENCIA: {datos['vigencia_inicio']} al {datos['vigencia_fin']}", hoja["DatoCentrado"]))
     elementos.append(Paragraph(f"ACTIVIDAD: {datos['actividad'].upper()}", hoja["DatoCentrado"]))
