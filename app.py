@@ -41,6 +41,7 @@ class DatosConstancia(BaseModel):
     sede: str = "PRINCIPAL"
     empresa: str
     ruc: str
+    etiqueta_documento: str = "RUC"
     vigencia_inicio: str
     vigencia_fin: str
     actividad: str
